@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+}
+
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow:1;
+    justify-content: space-around;
+}
+body {
+    margin-bottom: 100px;
+    font-family: 'Tenor Sans';
+    background-color: #eee;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: left;
+}
+
+.container {
+    max-width: 2000px;
+    width: 100%;
+    max-height: 1200px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+hr {
+    width: 200px;
+    border-top: 2px solid black;
+}
+
+/* header */
+header {
+    height: 65px;
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    margin-top: 10px;
+    width: 100px;
+    float: left;
+    margin-bottom: 10px;
+}
+.header-left {
+    float: left;
+}
+
+.header-left a {
+    float: left;
+    line-height: 65px;
+    display: block;
+    padding: 0 25px;
+    transition: all 0.5s;
+    color: white;
+}
+
+.header-left a:hover {
+    background-color: rgb(255, 189, 66);
+    font-weight: bold;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right a{
+    float: left;
+    line-height: 65px;
+    color: white;
+    display: block;
+    transition: all 0.5s;
+    display: block;
+    padding: 0 25px;
+}
+
+.header-right a:hover {
+    background-color: rgb(253, 184, 54);
+    font-weight: bold;
+}
+
+.header-left > .menu-icon {
+    float: left;
+	font-size: 23px;
+	display: none;
+}
+/* end header */
+
+/* jumbotron */
+#background_weather{
+    /* margin-top: 50px; */
+  
+    background-image: url('../img/Delicious-Food-Wallpaper-e1425637548126.jpg');
+    height: 500px;
+    background-size: 100% 100%;
+    transition: 0.3s;
+    flex-direction: row;
+    align-items: center;
+    
+ 
+}
+#calendar-vn{
+    position: absolute;
+    margin: 0 auto;
+    opacity: 0.7;
+    background-color: #ffffff;
+    width: 300px;
+    color: black;
+    top: 120px;
+    left: 510px;
+}
+
+.fas {
+    color: white;
+}
+
+.fa-chevron-circle-left {
+    float: left;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+.fa-chevron-circle-right {
+    float: right;
+    font-size: 50px;
+    margin-right: 10px;
+}
+/* end jumbotron */
+
+/* main */
+/* product */
+
+.heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.search {
+    width: 30%;
+}
+
+.fa-search {
+    font-size: 20px;
+    color: grey;
+}
+
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-self: space-around; 
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 21%;
+    height: 220px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 2% 2%;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+
+.card p{
+    background-color: linen;
+    line-height: 50px;
+}
+.card p > a{
+
+    color: black;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.card img:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    transition: 1.4s;
+}
+
+
+
+
+/*.card p:hover {
+    background-color: white;
+    color: black;
+    transition: 1.4s;
+} */
+
+.african {
+    background-color: red;
+}
+.american {
+    background-color: orange;
+}
+
+.british {
+    background-color: #efca08;
+}
+
+.cajun {
+    background-color: rgb(10, 173, 157);
+}
+
+.caribbean {
+    background-color: rgb(10, 173, 157);
+}
+
+.chinese {
+    background-color: #efca08;
+}
+
+.italia {
+    background-color: orange;
+}
+
+.french {
+    background-color: red;
+}
+/* end product */
+
+/* comment */
+.comment {
+    margin: 20px 26% 60px 26%;
+}
+
+.comment .heading {
+    margin-top: 30px;
+}
+
+.comment h3 {
+    margin-bottom: 5px;
+}
+
+input,textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.submit {
+    width: 40%;
+    background-color: green;
+    float: right;
+    cursor: pointer;
+    color: white;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+/* about */
+.about {
+    margin-bottom: 100px;
+}
+.about-us {
+    display: block;
+    margin-top: 50px;
+}
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+
+.profile-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    margin: 2% 5%;
+    justify-content: space-around;
+}
+
+.profile img {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.profile-sosmed {
+    display: inline-flex;
+}
+
+
+.profile-sosmed a {
+    margin: 20px 10px;
+    font-size: 30px;
+    transition: 0.4s;
+    justify-content:space-around;
+}
+
+
+.profile-sosmed a:hover {
+    transform: rotate(-35deg) skew(20deg);
+    transition: 0.4s;
+}
+
+.fab {
+    font-size: 50px;
+}
+.fa-facebook-square {
+    color: blue;
+}
+
+.fa-twitter-square {
+    color: rgb(0, 139, 253);
+}
+
+.fa-github-square {
+    color: black;
+}
+
+.fa-youtube-square {
+    color: red;
+}
+
+
+/* end about */
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: -50;
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+
+.footer-left {
+    float: left;
+    display: block;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-top: 30px;
+}
+
+.footer-right {
+    float: right;
+}
+
+.footer-right a{
+    float: left;
+    line-height: 100px;
+    display: block;
+    padding: 0 20px;
+    transition: all 0.5s;
+    color: white;
+    font-size: 20px;
+    transition: color 0.4s linear;
+
+}
+
+.footer-right a:hover {
+    background-color: orange;
+    transition: all 0.6s ease 0s;
+}
+body #category-container{
+    margin-top:3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 1;
+    justify-content: space-around;
+
+}
+#meal-container{
+    text-align: center;
+    width:100%;
+    margin: 2em;
+    font-size: 15px;
+    
+}
+.modal {
+    vertical-align:middle;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+/* end footer */
+/* end main */

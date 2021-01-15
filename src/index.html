@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    name="viewport">
+<meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>BMeal</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9fd94e847a.js" crossorigin="anonymous"></script>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0&appId=710554646057872&autoLogAppEvents=1" nonce="dSVhmSjW"></script>
+    <!-- jquery & efek scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <img src="./assets/img/LogoMakr-0yX185.png" alt="logo" class="logo">
+                <a href="#" class="menu-icon">
+                    <span class="fas fa-bars"></span>
+                </a>
+                <a href="#home" class="page-scroll">Home</a>
+                <a href="#product" class="page-scroll">Food</a>
+                <a href="#comment" class="page-scroll">Comment</a>
+                <a href="#about" class="page-scroll">About</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="jumbotron"  id="home">
+            <div id="background_weather"></div>
+                <div class=""  id="calendar-vn">
+                    <div class="mx-auto col-md-6 text-center bg-primary mt-5 p-5 rounded">
+                        <h1 id="w-location"></h1>
+                        <h3 class="text-dark" id="w-desc"></h3>
+                        <h3 id="w-string"></h3>
+                        <img id="w-icon">
+                        <ul class="list-group mt-3" id="w-details">
+                            <li class="list-group-item" id="w-humidity"></li>
+                            <li class="list-group-item" id="w-feels-like"></li>
+                            <li class="list-group-item" id="w-wind"></li>
+                        </ul>
+                        <hr>
+                        <button class="btn btn-outline-secondary" data-target="#locModal" data-toggle="modal" type="button">
+                            Change Location
+                        </button>
+                        <p id="time"></p>
+                    </div>
+                </div>
+                <div aria-hidden="true" aria-labelledby="locModalLabel" class="modal"  id="locModal"
+                tabindex="-1">
+                <div class="modal-dialog" style="width: 400px;height: 100px;text-align: center;background-color: aliceblue;margin-left: 500px;">
+                   <div class="modal-content">
+                       <div class="modal-header">
+                           <h5 class="modal-title" id="locModalLabel">Choose Location</h5>
+                           <!-- <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                               <span aria-hidden="true">&times;</span>
+                           </button> -->
+                       </div>
+                       <div class="modal-body">
+                           <form id="w-form">
+                               <div class="form-group">
+                                   <label for="city">City</label>
+                                   <input class="form-control" id="city" type="text">
+                               </div>
+                           </form>
+                       </div>
+                       <div class="modal-footer">
+                           <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+                           <button class="btn btn-primary" id="w-change-btn" type="button">Save changes</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+            </div>
+            
+
+            
+        </div>
+        <!-- end jumbotron -->
+
+        <!-- product -->
+        <section class="product" id="product">
+            <div class="container">
+                <div class="heading text-center">
+                    <h2>Food Around the World</h2>
+                    <hr>
+                    <search-bar></search-bar>
+                </div>
+                <div id="main-container">
+                 
+                </div>
+                
+        </section>
+        <!-- end product -->
+        <section style="text-align: center;" id="comment">
+            <div class="container">
+                <div class="heading text-center">
+                    <h2>Comment</h2>
+                    <hr>
+                </div>
+        <div class="fb-comments" data-href="http://127.0.0.1:5500/PROYEK%20BONUS%202/src/index.html" data-width="" data-numposts="5"></div>
+       </div>
+       <div class="container">
+           <object name="foo" type="text/html" data="./video/indexVideo.html" width="1000px" height="500px"></object>
+        </div>
+       </section>
+        <!-- comment -->
+        <!-- end comment -->
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="heading text-center about-us">
+                    <h2>About Us</h2>
+                    <hr>
+                    <p>This website designed by</p>
+                </div>
+
+                <div class="profile text-center">
+                    <div class="profile-card">
+                        <img src="./assets/img/huy.jpg" alt="" class="profile-img">
+                        <div class="profile-content">
+                            <h2>Le Ngoc Huy</h2>
+                            <p>"From VNC with love"</p>
+                        </div>
+                        <div class="profile-sosmed">
+                            <a href="https://www.facebook.com/huy1407" class="icon-main">
+                                <span class="fab fa-facebook-square"></span>
+                               
+                            </a>
+                            <a href="#" class="icon-main">
+                                <span class="fab fa-twitter-square"></span>
+                               
+                            </a>
+                            <a href="#">
+                                <span class="fab fa-github-square" class="icon-main"></span>
+                            </a>
+                            <a href="#">
+                                <span class="fab fa-youtube-square" class="icon-main"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="profile-card">
+                        <img src="./assets/img/tu.jpg" alt="" class="profile-img">
+                        <div class="profile-content">
+                            <h2>Bui Anh Tu</h2>
+                            <p>"From VNC with love"</p>
+                        </div>
+                        <div class="profile-sosmed">
+                            <a href="https://www.facebook.com/blackman2xxx" class="icon-main">
+                                <span class="fab fa-facebook-square"></span>
+                            </a>
+                            <a href="#" class="icon-main">
+                                <span class="fab fa-twitter-square"></span>
+                            </a>
+                            <a href="#" class="icon-main">
+                                <span class="fab fa-github-square"></span>
+                            </a>
+                            <a href="#" class="icon-main">
+                                <span class="fab fa-youtube-square"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <img src="./assets/img/LogoMakr-0yX185.png" alt="logo" class="footer-logo">
+            </div>
+
+            <div class="footer-right">
+            </div>
+        </div>
+    </footer>
+</div>
+    <script crossorigin="anonymous"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+    integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/weather/storage.js"></script>
+    <script src="./assets/js/weather/weather.js"></script>
+    <script src="./assets/js/weather/ui.js"></script>
+    <script src="./assets/js/weather/app.js"></script>
+    <script src="./assets/js/time/time.js"></script>
+</body>
+</html>

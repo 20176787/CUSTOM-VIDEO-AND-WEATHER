@@ -1,0 +1,115 @@
+@media screen and (max-width: 1000px) {
+    .jumbotron .container {
+        height: 400px;
+    }
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .header-left a {
+        font-size: 15px;
+    }
+
+    .header-right a {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2% 5%;
+    }
+    
+    .search {
+        width: 50%;
+    }
+
+    .comment {
+        margin: 20px 15%;
+    }
+    .about {
+        height: 900px;
+    }
+
+    .profile-card {
+        width: 40%;
+    }
+
+    .profile-sosmed a{
+        margin: 20px 10px;
+    }
+
+    .profile-content h2{
+        font-size: 20px;
+    }
+
+    .fab {
+        font-size: 40px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 710px) {
+    .header-left a{
+        display: none;
+    }
+
+    .header-left > .menu-icon {
+        display: block;
+    }
+
+    .jumbotron .container {
+        height: 200px;
+    }
+
+    .product {
+        height: 1950px;
+    }
+    .card {
+        width: 80%;
+        margin: 2% 10%;
+    }
+
+    .comment {
+        margin: 20px 15%;
+    }
+
+    .comment .heading {
+        margin-top: 100px;
+    }
+
+    .about {
+        height: 1600px;
+    }
+
+    .profile-card {
+        width: 70%;
+        padding: 2% 5%;
+    }
+    
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-right a{
+        font-size: 15px;
+        padding: 0 10px;
+        transition: 0.3s   ;
+    }
+
+    @media screen and (max-width: 500px) {
+        .container {
+            padding: 0 30px;
+        }
+        .logo {
+            display: none;
+        }
+
+        .fab {
+            font-size: 30px;
+        }
+    }
+
+}
